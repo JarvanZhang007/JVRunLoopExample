@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D8r-Zj-xLx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RS5-LS-46Y">
+            <objects>
+                <navigationController id="D8r-Zj-xLx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m9q-mU-RbU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="czh-hm-RXm" kind="relationship" relationship="rootViewController" id="9l2-hj-LUP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZU-fh-wsl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1240" y="-71"/>
+        </scene>
+        <!--RunLoop-->
+        <scene sceneID="YHo-zW-M0p">
+            <objects>
+                <viewController id="czh-hm-RXm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7iW-H5-Rgf"/>
+                        <viewControllerLayoutGuide type="bottom" id="QWq-xq-Xxf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SLa-HE-zqt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMp-zB-wfG">
+                                <rect key="frame" x="87" y="398.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4wS-0J-axh"/>
+                                    <constraint firstAttribute="height" constant="30" id="5R5-e0-GfY"/>
+                                </constraints>
+                                <state key="normal" title="Timer事件和监听"/>
+                                <connections>
+                                    <segue destination="3cn-BC-Ofe" kind="push" id="D7A-3I-FYH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEr-q8-TxN">
+                                <rect key="frame" x="87" y="318.5" width="200" height="30"/>
+                                <state key="normal" title="RunLoop的休眠和唤醒"/>
+                                <connections>
+                                    <segue destination="WNA-U7-Z8s" kind="push" id="w15-rA-zKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVA-bb-uGp">
+                                <rect key="frame" x="87" y="238.5" width="200" height="30"/>
+                                <state key="normal" title="子线程和主线程表现"/>
+                                <connections>
+                                    <segue destination="gVh-aV-yZY" kind="push" id="xFL-cY-OqO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="centerX" secondItem="SLa-HE-zqt" secondAttribute="centerX" id="5g7-UG-gcY"/>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="leading" secondItem="GEr-q8-TxN" secondAttribute="leading" id="JMX-0I-FcJ"/>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="trailing" secondItem="GEr-q8-TxN" secondAttribute="trailing" id="Jev-N8-nmK"/>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="trailing" secondItem="VVA-bb-uGp" secondAttribute="trailing" id="KUa-fX-dnL"/>
+                            <constraint firstItem="GEr-q8-TxN" firstAttribute="top" secondItem="VVA-bb-uGp" secondAttribute="bottom" constant="50" id="h6I-7f-dhs"/>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="leading" secondItem="VVA-bb-uGp" secondAttribute="leading" id="mSi-tM-T8c"/>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="centerY" secondItem="SLa-HE-zqt" secondAttribute="centerY" constant="80" id="tdk-J0-WMM"/>
+                            <constraint firstItem="UMp-zB-wfG" firstAttribute="top" secondItem="GEr-q8-TxN" secondAttribute="bottom" constant="50" id="zcA-uN-KLo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RunLoop" id="dpL-sV-pZZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vZ-pS-LTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434" y="-76"/>
+        </scene>
+        <!--Timer With Obsever-->
+        <scene sceneID="Hur-4Z-U23">
+            <objects>
+                <viewController id="3cn-BC-Ofe" customClass="JVTimerWithObserverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cFA-KN-E6A"/>
+                        <viewControllerLayoutGuide type="bottom" id="QEs-3C-nW2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oUf-B9-dNC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7g-Rc-Lqe">
+                                <rect key="frame" x="62" y="318" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="8qg-BU-tez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="add Timer With Observer"/>
+                                <connections>
+                                    <action selector="start:" destination="3cn-BC-Ofe" eventType="touchUpInside" id="9pD-fM-p8a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQE-BD-wcE">
+                                <rect key="frame" x="62" y="398" width="250" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="3cn-BC-Ofe" eventType="touchUpInside" id="bjt-BW-YRl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gQE-BD-wcE" firstAttribute="top" secondItem="x7g-Rc-Lqe" secondAttribute="bottom" constant="50" id="CSc-zY-jHe"/>
+                            <constraint firstItem="x7g-Rc-Lqe" firstAttribute="centerY" secondItem="oUf-B9-dNC" secondAttribute="centerY" id="CVZ-jx-AhR"/>
+                            <constraint firstItem="x7g-Rc-Lqe" firstAttribute="centerX" secondItem="oUf-B9-dNC" secondAttribute="centerX" id="gNr-yH-hh1"/>
+                            <constraint firstItem="gQE-BD-wcE" firstAttribute="leading" secondItem="x7g-Rc-Lqe" secondAttribute="leading" id="rRA-tY-cgn"/>
+                            <constraint firstItem="gQE-BD-wcE" firstAttribute="trailing" secondItem="x7g-Rc-Lqe" secondAttribute="trailing" id="y58-Tr-8yC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timer With Obsever" id="uah-F7-vHf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ST6-VP-8u1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="-314"/>
+        </scene>
+        <!--RunLoop的休眠和唤醒-->
+        <scene sceneID="t7a-13-PDo">
+            <objects>
+                <viewController id="WNA-U7-Z8s" customClass="JVControlRunLoopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X1S-YP-dJD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ypc-DM-slZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iCj-64-HZo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wx-eg-byQ">
+                                <rect key="frame" x="112.5" y="318.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3mq-Ps-lsE"/>
+                                    <constraint firstAttribute="width" constant="150" id="QKg-8R-Fg2"/>
+                                </constraints>
+                                <state key="normal" title="wakeUp"/>
+                                <connections>
+                                    <action selector="wakeUpRunLoop:" destination="WNA-U7-Z8s" eventType="touchUpInside" id="lec-f4-T07"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9e-fM-LRm">
+                                <rect key="frame" x="112.5" y="238.5" width="150" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createRunLoopInNewThread:" destination="WNA-U7-Z8s" eventType="touchUpInside" id="uon-en-sef"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfV-Nt-ZUT">
+                                <rect key="frame" x="112.5" y="398.5" width="150" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopRunLoop:" destination="WNA-U7-Z8s" eventType="touchUpInside" id="Vve-9h-DdB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0wx-eg-byQ" firstAttribute="centerX" secondItem="iCj-64-HZo" secondAttribute="centerX" id="BGy-kR-Hah"/>
+                            <constraint firstItem="0wx-eg-byQ" firstAttribute="centerY" secondItem="iCj-64-HZo" secondAttribute="centerY" id="MtS-AT-3lx"/>
+                            <constraint firstItem="ZfV-Nt-ZUT" firstAttribute="leading" secondItem="F9e-fM-LRm" secondAttribute="leading" id="Tku-l0-TS8"/>
+                            <constraint firstItem="ZfV-Nt-ZUT" firstAttribute="trailing" secondItem="F9e-fM-LRm" secondAttribute="trailing" id="XhK-KD-SZC"/>
+                            <constraint firstItem="ZfV-Nt-ZUT" firstAttribute="top" secondItem="0wx-eg-byQ" secondAttribute="bottom" constant="50" id="Z9k-rT-F0Z"/>
+                            <constraint firstItem="0wx-eg-byQ" firstAttribute="top" secondItem="F9e-fM-LRm" secondAttribute="bottom" constant="50" id="l9D-fA-53r"/>
+                            <constraint firstItem="0wx-eg-byQ" firstAttribute="leading" secondItem="F9e-fM-LRm" secondAttribute="leading" id="psK-8O-59z"/>
+                            <constraint firstItem="0wx-eg-byQ" firstAttribute="trailing" secondItem="F9e-fM-LRm" secondAttribute="trailing" id="wPi-r4-61t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RunLoop的休眠和唤醒" id="eoo-KU-OCM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvb-Bf-UKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="369"/>
+        </scene>
+        <!--子线程和主线程表现-->
+        <scene sceneID="ybW-ig-we1">
+            <objects>
+                <viewController id="gVh-aV-yZY" customClass="JVcontrastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="giZ-Rl-rmo"/>
+                        <viewControllerLayoutGuide type="bottom" id="lBD-z4-T8i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pyc-GU-jkf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFg-k7-ih6">
+                                <rect key="frame" x="134" y="318.5" width="107" height="30"/>
+                                <state key="normal" title="次线程RunLoop"/>
+                                <connections>
+                                    <action selector="otherRunLoopTest:" destination="gVh-aV-yZY" eventType="touchUpInside" id="h5G-tC-PRt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlU-fU-hTP">
+                                <rect key="frame" x="133.5" y="188.5" width="107" height="30"/>
+                                <state key="normal" title="主线程RunLoop"/>
+                                <connections>
+                                    <action selector="mainRunLoopTest:" destination="gVh-aV-yZY" eventType="touchUpInside" id="bC0-nV-949"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKh-W6-ysF">
+                                <rect key="frame" x="134" y="448.5" width="107" height="30"/>
+                                <state key="normal" title="点击测试"/>
+                                <connections>
+                                    <action selector="testClick:" destination="gVh-aV-yZY" eventType="touchUpInside" id="BJk-hB-y4D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AFg-k7-ih6" firstAttribute="top" secondItem="AlU-fU-hTP" secondAttribute="bottom" constant="100" id="3ds-Ym-2ks"/>
+                            <constraint firstItem="AFg-k7-ih6" firstAttribute="centerY" secondItem="pyc-GU-jkf" secondAttribute="centerY" id="ERQ-rr-g6K"/>
+                            <constraint firstItem="AFg-k7-ih6" firstAttribute="centerX" secondItem="pyc-GU-jkf" secondAttribute="centerX" id="FPm-7o-Kfa"/>
+                            <constraint firstItem="vKh-W6-ysF" firstAttribute="top" secondItem="AFg-k7-ih6" secondAttribute="bottom" constant="100" id="PfD-li-X8m"/>
+                            <constraint firstItem="AFg-k7-ih6" firstAttribute="leading" secondItem="AlU-fU-hTP" secondAttribute="leading" id="cWO-JD-Mgy"/>
+                            <constraint firstItem="vKh-W6-ysF" firstAttribute="leading" secondItem="AFg-k7-ih6" secondAttribute="leading" id="g1O-dz-cEc"/>
+                            <constraint firstItem="vKh-W6-ysF" firstAttribute="trailing" secondItem="AFg-k7-ih6" secondAttribute="trailing" id="gGJ-Em-skA"/>
+                            <constraint firstItem="AFg-k7-ih6" firstAttribute="trailing" secondItem="AlU-fU-hTP" secondAttribute="trailing" id="qmi-V1-5Pw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="子线程和主线程表现" id="iQS-do-Qgt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAi-zz-10X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="-967"/>
+        </scene>
+    </scenes>
+</document>
